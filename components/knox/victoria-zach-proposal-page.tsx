@@ -20,6 +20,7 @@ const PREVIEW_VIDEO = "https://blog.hotlistdigital.com/wp-content/uploads/2026/0
 const PREVIEW_VIDEO_POSTER = "/videos/victoria-zach-love-poster.jpg";
 const MIDDLE_VIDEO = "https://blog.hotlistdigital.com/wp-content/uploads/2026/07/NewestWeddingVideo.mov";
 const MIDDLE_VIDEO_POSTER = "/videos/victoria-zach-newest-wedding-poster.jpg";
+const PRODUCTION_IMAGE = "/victoria-zach-wedding-setup.png";
 
 const detailCards = [
   { label: "Date", value: config.eventDate },
@@ -340,6 +341,19 @@ function ProductionSection() {
         <p className="mt-10 max-w-[66ch] font-light" style={{ color: "rgba(255,255,255,0.58)", lineHeight: 1.75 }}>
           Everything is designed to look as polished as it sounds and to complement the venue throughout the evening.
         </p>
+      </FadeIn>
+
+      <FadeIn delay={225}>
+        <div className="mt-14">
+          <Image
+            src={PRODUCTION_IMAGE}
+            alt="Knox Signature wedding setup with white DJ command center and architectural lighting"
+            width={1536}
+            height={1024}
+            className="block h-auto w-full"
+            style={{ border: "1px solid rgba(255,255,255,0.06)", opacity: 0.96 }}
+          />
+        </div>
       </FadeIn>
 
     </section>
